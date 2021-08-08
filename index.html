@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        hi there!
-    </h1>
-    
+    <link rel="stylesheet" href="style.css">
+    <div class="z">
+    </div>
+    <div class="square-wrapper">
+        <div class="square"></div>
+    </div>
+    <script>
+        const square=document.querySelector('.square')
+        const observer=new IntersectionObserver(entries =>{
+            entries.forEach(entry=>{
+                if(entry.isIntersecting==true){
+                    console.log("on")
+                    square.classList.add('square-animation')
+                    return
+                }
+                else{
+                    console.log("off")
+                    square.classList.remove('square-animation')
+                }
+            })
+
+        });
+        observer.observe(document.querySelector('.square-wrapper'));
+    </script>
 </body>
 </html>

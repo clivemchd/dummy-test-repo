@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: #333;
+}
+.square{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+}
+.square-animation{
+    animation: wipe-enter 1s infinite;
+}
+@keyframes wipe-enter{
+    0%{
+        transform: scale(0,0.025);
+    }
+    50%{
+        transform: scale(1,0.025);
+    }
+}
