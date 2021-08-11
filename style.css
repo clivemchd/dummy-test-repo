@@ -39,36 +39,49 @@
 .wrapper{
     display: flex;
 }
-.container section{
-    width: 70%;
-}
+
 .container aside{
-    width: 30%;
+    width: 40%;
     text-align:end;
+    /* background-color: #333; */
 }
 .container aside .signup{
+    height: 60vh;
     padding: 5px 0;
     position: sticky;
     -webkit-position:sticky;
     top: 150px;
+    /* background-color: #333; */
 }
+/* .verticalnav{
+    display: flex;
+} */
 .verticalnav a{
     display: block;
-}
-.verticalnav a{
     text-decoration: none;
-    color: #333;;
+    color: #333;
     padding: 24px 12px;
+    tab-size: 2rem;
     transition: all 0.6s ease-out;
+    border-bottom: 4px solid white ;
 }
 .verticalnav a:hover{
-    border-bottom: 4px solid wheat;
+    overflow-y: hidden;
     transition: all 0.3s ease-out;
-    color: wheat;
+    color: white;
     background-color: #333;
+    border-bottom: 4px solid wheat ;
 }
-.passage{
-    padding: 48px 24px;
+
+.leftdisp p{
+    font-size: 4rem;
+    font-weight: 900;
+    width: 100%;
+    color: rgb(107, 107, 107);
+    position: absolute;
+    top: 28%;
+    transform: rotate(-90deg);
+    text-align: center;
 }
 .footer{
     width: 100%;
@@ -79,4 +92,36 @@
     width: 100%;
     height: 500px;
     background-color: rgb(255, 21, 99);
+}
+.container section{
+    width: 100%;
+}
+.dummy1{
+    background-color: rgb(238, 63, 115);
+    height: 100vh;
+}
+.dummy2{
+    background-color: rgb(245, 216, 51);
+    height: 100vh;
+}
+.dummy3{
+    background-color: rgb(61, 204, 240);
+    height: 100vh;
+}
+.panel1{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    left: 5%;
+    top: 20%;
+    z-index: 2;
+}
+.panel2{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(128, 128, 128);
+    left: 20%;
+    top: -50%;
 }
