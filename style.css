@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;900&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0%;
     margin: 0%;
@@ -41,12 +43,12 @@
 }
 
 .container aside{
-    width: 40%;
+    width: 30%;
     text-align:end;
     /* background-color: #333; */
 }
 .container aside .signup{
-    height: 60vh;
+    height: 50vh;
     padding: 5px 0;
     position: sticky;
     -webkit-position:sticky;
@@ -79,7 +81,7 @@
     width: 100%;
     color: rgb(107, 107, 107);
     position: absolute;
-    top: 28%;
+    top: 36%;
     transform: rotate(-90deg);
     text-align: center;
 }
@@ -87,41 +89,100 @@
     width: 100%;
     height: 500px;
     background-color: orange;
+    position: relative;
+    display: flex;
 }
-.footer2{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(255, 21, 99);
-}
+
 .container section{
     width: 100%;
 }
 .dummy1{
     background-color: rgb(238, 63, 115);
     height: 100vh;
+    position: relative;
 }
 .dummy2{
     background-color: rgb(245, 216, 51);
     height: 100vh;
+    position: relative;
 }
 .dummy3{
     background-color: rgb(61, 204, 240);
     height: 100vh;
+    position: relative;
+}
+.dummy4{
+    background-color: rgb(61, 240, 150);
+    height: 100vh;
+    position: relative;
 }
 .panel1{
-    position: relative;
+    position: absolute;
     width: 400px;
     height: 400px;
-    background-color: #fff;
-    left: 5%;
     top: 20%;
-    z-index: 2;
+    left: 5%;
+    background-color: #fff;
+    z-index: 1;
 }
 .panel2{
-    position: relative;
-    width: 80%;
+    position: absolute;
+    width: 90%;
     height: 80%;
-    background-color: rgb(128, 128, 128);
-    left: 20%;
-    top: -50%;
+    top: 10%;
+    left: 10%;
+    background-color: #333;
+}
+.heading{
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 2rem;
+    top: 10%;
+    left: 5%;
+    z-index: 1;
+}
+.description{
+    position: absolute;
+    width: 200px;
+    height: 60%;
+    padding: 10px;
+    background-color: #fff;
+    font-size: .8rem;
+    top: 27%;
+    left: 5%;
+    z-index: 1;
+}
+.imgs{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    background-color: #333;
+}
+.imgs2{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left: 10%;
+    background-color: #333;
+}
+.movingImg{
+    position: absolute;
+    width: 400px;
+    height: 270px;
+    top: 50%;
+    left: 2%;
+    background-color: rgb(255, 255, 255);
+}
+.productP{
+    position: relative;
+    margin: 10px;
+    top: 20%;
+    width: 16%;
+    height: 50%;
+    background-color: #fff;;
 }
