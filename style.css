@@ -7,6 +7,9 @@ html{
     margin: 0%;
     font-family: Poppins;
 }
+body{
+    overflow-x: hidden;
+}
 .a{
     z-index: 100;
     position: relative;
@@ -48,6 +51,7 @@ html{
     /* background-color: #333; */
 }
 .container aside .signup{
+    z-index: 2;
     height: 50vh;
     padding: 5px 0;
     position: sticky;
@@ -59,6 +63,7 @@ html{
     display: flex;
 } */
 .verticalnav a{
+    z-index: 2;
     display: block;
     text-decoration: none;
     color: #333;
@@ -118,20 +123,36 @@ html{
 }
 .panel1{
     position: absolute;
+    opacity: 0;
     width: 400px;
     height: 400px;
     top: 20%;
     left: 5%;
     background-color: #fff;
+    transform: translateX(-50%);
     z-index: 1;
+    transition: all 0.5s ease-in;
+}
+.panel1.fade{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in;
 }
 .panel2{
     position: absolute;
+    opacity: 0;
     width: 90%;
     height: 80%;
     top: 10%;
     left: 10%;
+    transform: translateX(50%);
     background-color: #333;
+    transition: all 0.5s ease-in;
+}
+.panel2.fade{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in;
 }
 .heading{
     position: absolute;
@@ -143,8 +164,36 @@ html{
     top: 10%;
     left: 5%;
     z-index: 1;
+    transform: translateX(-50%);
+    transition: all 0.6s ease-in;
+    opacity: 0;
+}
+.heading.fade{
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    transform: translateX(0%);
+}
+.heading2{
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 2rem;
+    top: 10%;
+    left: 5%;
+    z-index: 1;
+    transform: translateX(-50%);
+    transition: all 0.6s ease-in;
+    opacity: 0;
+}
+.heading2.fade{
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    transform: translateX(0%);
 }
 .description{
+    opacity: 0;
     position: absolute;
     width: 200px;
     height: 60%;
@@ -154,6 +203,13 @@ html{
     top: 27%;
     left: 5%;
     z-index: 1;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in;
+}
+.description.fade{
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    transform: translateX(0%);
 }
 .imgs{
     position: absolute;
@@ -162,8 +218,32 @@ html{
     top: 10%;
     left: 5%;
     background-color: #333;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.imgs.fade{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.5s ease-in;
 }
 .imgs2{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    background-color: #333;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.imgs2.fade{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+.imgs3{
     position: absolute;
     width: 90%;
     height: 100%;
